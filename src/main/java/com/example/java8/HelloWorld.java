@@ -13,6 +13,10 @@ public class HelloWorld {
         List<Long> longs = list.stream().filter(StringUtils::isNotBlank).
                 map(s ->Long.parseLong(s.trim())).collect(Collectors.toList());
 
+
+
+
+
         longs.forEach(System.out::println);
     }
 }
